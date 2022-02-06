@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import YoutubeSize from "../images/yotubeSize.png";
 import Lock from "../images/lock.png";
 import Profile from "../images/profile.png";
+import { Link } from "react-router-dom";
 
 const WatchLectures = () => {
   return (
@@ -14,9 +15,11 @@ const WatchLectures = () => {
         <div className="my-3 text-xl">1 hr 30 min</div>
         <div className="my-3 text-xl">Introduction to Product Management</div>
       </div>
-      <div className="lg:mt-20 mt-2 text-center lg:text-left mb-5 text-blue-500 underline lg:mr-7 lg:ml-14">
-        Watch Now
-      </div>
+      <Link to="/">
+        <div className="lg:mt-20 mt-2 text-center lg:text-left mb-5 text-blue-500 underline lg:mr-7 lg:ml-14">
+          Watch Now
+        </div>
+      </Link>
     </div>
   );
 };
@@ -53,12 +56,16 @@ const LecturesPage = () => {
           </div>
         </div>
         <div className="flex relative lg:mt-11 md:mt-7 mt-8 lg:left-[20%] md:left-[8%]">
-          <div className="lg:px-20 px-10 bg-[#2C62B3] h-10 md:mx-5 mx-0 rounded-lg py-1 font-bold text-white">
-            Lectures
-          </div>
-          <div className="lg:px-14 px-5 border-solid border-[#2C62B3] border-2 h-10 mx-5 rounded-lg py-1 font-bold text-[#2C62B3]">
-            Assignments
-          </div>
+          <Link to="/">
+            <div className="lg:px-20 px-10 bg-[#2C62B3] h-10 md:mx-5 mx-0 rounded-lg py-1 font-bold text-white">
+              Lectures
+            </div>
+          </Link>
+          <Link to="/">
+            <div className="lg:px-14 px-5 border-solid border-[#2C62B3] border-2 h-10 mx-5 rounded-lg py-1 font-bold text-[#2C62B3]">
+              Assignments
+            </div>
+          </Link>
         </div>
       </div>
       <div className="w-[82%] md:w-[90%] lg:w-[82%] h-[1px] bg-gray-200 mt-7 lg:ml-32 ml-10"></div>
@@ -72,9 +79,11 @@ const LecturesPage = () => {
           <LockLectures />
           <LockLectures />
           <LockLectures />
-          <div className="text-blue-500 underline mt-7 text-lg">
-            Show all topics
-          </div>
+          <Link to="/">
+            <div className="text-blue-500 underline mt-7 text-lg">
+              Show all topics
+            </div>
+          </Link>
         </div>
         <div className="lg:ml-16 md:ml-8 mt-8 md:mt-0">
           <div className="">
@@ -169,9 +178,11 @@ const LecturesPage = () => {
               </div>
             </div>
           </div>
-          <div className="text-blue-500 underline text-lg mt-4">
-            Show more reviews
-          </div>
+          <Link to="/">
+            <div className="text-blue-500 underline text-lg mt-4">
+              Show more reviews
+            </div>
+          </Link>
         </div>
       </div>
     </div>
